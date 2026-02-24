@@ -3,7 +3,7 @@ import { expect, type Page } from '@playwright/test';
 export class Login {
   constructor(private readonly page: Page) {}
 
-  //Locators
+  // Locators
   get titulo() {
   return this.page.locator('.login_logo');
   }
@@ -17,7 +17,7 @@ export class Login {
     return this.page.locator('#login-button');
   }
 
-//Errores
+// Errors
   get errorMessage() {
     return this.page.locator('.error-button');
   }
@@ -29,7 +29,7 @@ export class Login {
   }
 
 
-  //Metodos
+  // Methods
 
   /**
    * Waits for the login page title/logo to be visible.
