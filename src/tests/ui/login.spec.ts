@@ -30,7 +30,7 @@ test.describe("Login page", () => {
 
   test("@smoke should NOT login with invalid credentials", async () => {
   /**
-   * @test: @smoke should NOT login with invalid credentials
+   * @test: @smoke should NOT login with invalid credential
    * Purpose: Ensure the application shows appropriate error indicators
    * when login is attempted with invalid credentials.
    * Steps:
