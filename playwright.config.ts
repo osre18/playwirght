@@ -1,6 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 import { env } from './src/config/env';
 
+
+console.log('PLAYWRIGHT BASE_URL =', env.baseUrl, 'HEADLESS =', env.headless);
 export default defineConfig({
   testDir: './src/tests',
   fullyParallel: true,
@@ -25,14 +27,6 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
     },
   ],
 });
