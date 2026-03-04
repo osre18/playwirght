@@ -23,7 +23,7 @@ test.describe("Login page", () => {
    *  3. Wait for the home/products page to appear
    * Expected result: The products page title is visible and equals 'Products'.
    */
-  await loginPage.login("standard_user", "secret_sauce");
+  await loginPage.login("standard_user", "secret_sauce"); //Parametros
   await homePage.waitForTitle();
   await expect(homePage.productsTitle).toHaveText("Products");
   });
